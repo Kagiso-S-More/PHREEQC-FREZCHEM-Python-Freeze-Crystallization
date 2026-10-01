@@ -8,23 +8,19 @@ from typing import Dict, List, Tuple
 import numpy as np
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[1]
-GENERATED_DIR = ROOT / "phreeqc_generated_files"
-GENERATED_DIR.mkdir(parents=True, exist_ok=True)
-WORKDIR = GENERATED_DIR
-
+WORKDIR = Path(__file__).resolve().parent
 PHREEQC_EXE = Path(
     shutil.which("phreeqc")
     or r"C:\Program Files\USGS\phreeqc-3.8.6-17100-x64\bin\ClrRelease\phreeqc.exe"
 )
-DATABASE = ROOT / "database" / "frezchem.dat"
+DATABASE = WORKDIR / "frezchem.dat"
 if not DATABASE.exists():
     DATABASE = PHREEQC_EXE.parent.parent / "database" / "frezchem.dat"
 
-COMPOSITION_FILE = ROOT / "input_data" / "C3_C5.xlsx"
-OLI_FILE = ROOT / "input_data" / "OLI_Simulation_C3_and_C5_Brine.xlsx"
-OUTPUT_EXCEL = ROOT / "sensitivity_results/FC_FREZCHEM_Sensitivity_Results.xlsx"
-OUTPUT_EXCEL.parent.mkdir(parents=True, exist_ok=True)
+COMPOSITION_FILE = WORKDIR / "C3_C5.xlsx"
+OLI_FILE = WORKDIR / "OLI_Simulation_C3_and_C5_Brine.xlsx"
+
+OUTPUT_EXCEL = WORKDIR / "FC_FREZCHEM_Sensitivity_Results.xlsx"
 
 START_TEMP = 25.0
 END_TEMP = -25.0
