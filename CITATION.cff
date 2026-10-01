@@ -1,11 +1,14 @@
 cff-version: 1.2.0
-title: "PHREEQC-FREZCHEM Freeze Crystallization Model"
-message: "If you use this software, please cite the associated manuscript and this repository."
+title: "PHREEQC-FREZCHEM-Python Freeze Crystallization Model"
+message: "If you use this framework, please cite the associated manuscript and this repository."
 type: software
+
 authors:
   - family-names: "More"
     given-names: "Kagiso"
+
 version: 1.0.0
 date-released: 2026-10-01
 license: MIT
-repository-code: "REPLACE_WITH_GITHUB_REPOSITORY_URL"
+
+repository-code: "https://github.com/Kagiso-S-More/PHREEQC-FREZCHEM-Python-Freeze-Crystallization"
