@@ -1,0 +1,40 @@
+TITLE C5 FREZCHEM sequential FC at 9.00 C
+SOLUTION 1
+    temp 9.00000000
+    pH 7.3698000000
+    units mol/kgw
+    -water 1.000000000000
+    Na 8.08490000000000e-01
+    K 1.44680000000000e-02
+    Mg 7.97710000000000e-02
+    Ca 1.38470000000000e-02
+    Cl 9.12980000000000e-01
+    S(6) 3.68060000000000e-02
+    C(4) 2.45460000000000e-03
+
+EQUILIBRIUM_PHASES 1
+    Ice(s)       0.0 0.0
+    Mirabilite   0.0 0.0
+    Halite       0.0 0.0
+    Hydrohalite  0.0 0.0
+    Calcite      0.0 0.0
+    Gypsum       0.0 0.0
+
+
+SELECTED_OUTPUT 1
+    -file C:/Users/Kagiso/PHREEQC-Python/C5_FREZ_eq_+009p0.txt
+    -reset false
+    -user_punch true
+USER_PUNCH 1
+    -headings Temp_C pH Water_kg Alk_eq_kgw Mu aw Na_mol K_mol Mg_mol Ca_mol Cl_mol S6_mol C4_mol Na_m K_m Mg_m Ca_m Cl_m S6_m C4_m Na_act Cl_act SO4_act SI_Ice SI_Mirabilite SI_Halite SI_Hydrohalite SI_Calcite SI_Gypsum Ice_mol Mirabilite_mol Halite_mol Hydrohalite_mol Calcite_mol Gypsum_mol Iterations
+    10 PUNCH TC, -LA("H+"), TOT("water"), ALK, MU, ACT("H2O")
+    20 PUNCH TOTMOLE("Na"), TOTMOLE("K"), TOTMOLE("Mg"), TOTMOLE("Ca")
+    30 PUNCH TOTMOLE("Cl"), TOTMOLE("S(6)"), TOTMOLE("C(4)")
+    40 PUNCH TOT("Na"), TOT("K"), TOT("Mg"), TOT("Ca")
+    50 PUNCH TOT("Cl"), TOT("S(6)"), TOT("C(4)")
+    60 PUNCH ACT("Na+"), ACT("Cl-"), ACT("SO4-2")
+    70 PUNCH SI("Ice(s)"), SI("Mirabilite"), SI("Halite"), SI("Hydrohalite"), SI("Calcite"), SI("Gypsum")
+    80 PUNCH EQUI("Ice(s)"), EQUI("Mirabilite"), EQUI("Halite"), EQUI("Hydrohalite"), EQUI("Calcite"), EQUI("Gypsum")
+    90 PUNCH ITERATIONS
+
+END
