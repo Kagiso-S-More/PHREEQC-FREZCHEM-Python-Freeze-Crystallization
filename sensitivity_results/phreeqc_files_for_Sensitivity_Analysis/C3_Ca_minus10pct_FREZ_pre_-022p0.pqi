@@ -1,0 +1,31 @@
+TITLE C3_Ca_minus10pct FREZCHEM sequential FC at -22.00 C
+SOLUTION 1
+    temp -22.00000000
+    pH 6.3482000000
+    units mol/kgw
+    -water 0.230840000000
+    Na 3.63104314676832e+00
+    K 9.36449488823428e-02
+    Mg 5.03898804366661e-01
+    Ca 7.60136891353318e-02
+    Cl 4.96361115924450e+00
+    S(6) 2.35366487610466e-02
+    C(4) 1.59725350892393e-02
+
+
+SELECTED_OUTPUT 1
+    -file C:/Users/Kagiso/PHREEQC-Python/C3_Ca_minus10pct_FREZ_pre_-022p0.txt
+    -reset false
+    -user_punch true
+USER_PUNCH 1
+    -headings Temp_C pH Water_kg Alk_eq_kgw Mu aw Na_mol K_mol Mg_mol Ca_mol Cl_mol S6_mol C4_mol Na_m K_m Mg_m Ca_m Cl_m S6_m C4_m Na_act Cl_act SO4_act SI_Ice SI_Mirabilite SI_Halite SI_Hydrohalite SI_Calcite SI_Gypsum Iterations
+    10 PUNCH TC, -LA("H+"), TOT("water"), ALK, MU, ACT("H2O")
+    20 PUNCH TOTMOLE("Na"), TOTMOLE("K"), TOTMOLE("Mg"), TOTMOLE("Ca")
+    30 PUNCH TOTMOLE("Cl"), TOTMOLE("S(6)"), TOTMOLE("C(4)")
+    40 PUNCH TOT("Na"), TOT("K"), TOT("Mg"), TOT("Ca")
+    50 PUNCH TOT("Cl"), TOT("S(6)"), TOT("C(4)")
+    60 PUNCH ACT("Na+"), ACT("Cl-"), ACT("SO4-2")
+    70 PUNCH SI("Ice(s)"), SI("Mirabilite"), SI("Halite"), SI("Hydrohalite"), SI("Calcite"), SI("Gypsum")
+    80 PUNCH ITERATIONS
+
+END
