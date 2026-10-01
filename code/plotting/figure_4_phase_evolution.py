@@ -11,14 +11,12 @@ from pathlib import Path
 # FILE PATHS
 # ============================================================
 
-ROOT = Path(__file__).resolve().parents[2]
-WORKDIR = ROOT
-(ROOT / "figures").mkdir(parents=True, exist_ok=True)
+WORKDIR = Path(r"C:\Users\Kagiso\PHREEQC-Python")
 
-INPUT_FILE = ROOT / "model_results" / "FC_frezchem_thermodynamic_results_final.xlsx"
+INPUT_FILE = WORKDIR / "FC_frezchem_thermodynamic_results_final.xlsx"
 
-OUTPUT_PNG = ROOT / "figures" / "Figure_4_Phase_Evolution.png"
-OUTPUT_PDF = ROOT / "figures" / "Figure_4_Phase_Evolution.pdf"
+OUTPUT_PNG = WORKDIR / "Figure_4_Phase_Evolution.png"
+OUTPUT_PDF = WORKDIR / "Figure_4_Phase_Evolution.pdf"
 
 # ============================================================
 # FIGURE SETTINGS
