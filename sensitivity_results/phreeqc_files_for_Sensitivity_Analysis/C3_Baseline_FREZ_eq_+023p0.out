@@ -1,0 +1,323 @@
+   Input file: C:\Users\Kagiso\PHREEQC-Python\C3_Baseline_FREZ_eq_+023p0.pqi
+  Output file: C:\Users\Kagiso\PHREEQC-Python\C3_Baseline_FREZ_eq_+023p0.out
+Database file: C:\Program Files\USGS\phreeqc-3.8.6-17100-x64\database\frezchem.dat
+
+------------------
+Reading data base.
+------------------
+
+	PITZER
+	SOLUTION_MASTER_SPECIES
+	SOLUTION_SPECIES
+	PHASES
+	PITZER
+	EXCHANGE_MASTER_SPECIES
+	EXCHANGE_SPECIES
+	SURFACE_MASTER_SPECIES
+	SURFACE_SPECIES
+	END
+------------------------------------
+Reading input data for simulation 1.
+------------------------------------
+
+	TITLE C3_Baseline FREZCHEM sequential FC at 23.00 C
+	SOLUTION 1
+	    temp 23.00000000
+	    pH 6.9723000000
+	    units mol/kgw
+	    water 1.000000000000
+	    Na 9.39050000000000e-01
+	    K 2.16190000000000e-02
+	    Mg 1.16330000000000e-01
+	    Ca 2.40860000000000e-02
+	    Cl 1.14590000000000e+00
+	    S(6) 5.96580000000000e-02
+	    C(4) 3.93980000000000e-03
+	EQUILIBRIUM_PHASES 1
+	    Ice(s)       0.0 0.0
+	    Mirabilite   0.0 0.0
+	    Halite       0.0 0.0
+	    Hydrohalite  0.0 0.0
+	    Calcite      0.0 0.0
+	    Gypsum       0.0 0.0
+	SELECTED_OUTPUT 1
+	    file C:/Users/Kagiso/PHREEQC-Python/C3_Baseline_FREZ_eq_+023p0.txt
+	    reset false
+	    user_punch true
+	USER_PUNCH 1
+	    headings Temp_C pH Water_kg Alk_eq_kgw Mu aw Na_mol K_mol Mg_mol Ca_mol Cl_mol S6_mol C4_mol Na_m K_m Mg_m Ca_m Cl_m S6_m C4_m Na_act Cl_act SO4_act SI_Ice SI_Mirabilite SI_Halite SI_Hydrohalite SI_Calcite SI_Gypsum Ice_mol Mirabilite_mol Halite_mol Hydrohalite_mol Calcite_mol Gypsum_mol Iterations
+	    10 PUNCH TC, -LA("H+"), TOT("water"), ALK, MU, ACT("H2O")
+	    20 PUNCH TOTMOLE("Na"), TOTMOLE("K"), TOTMOLE("Mg"), TOTMOLE("Ca")
+	    30 PUNCH TOTMOLE("Cl"), TOTMOLE("S(6)"), TOTMOLE("C(4)")
+	    40 PUNCH TOT("Na"), TOT("K"), TOT("Mg"), TOT("Ca")
+	    50 PUNCH TOT("Cl"), TOT("S(6)"), TOT("C(4)")
+	    60 PUNCH ACT("Na+"), ACT("Cl-"), ACT("SO4-2")
+	    70 PUNCH SI("Ice(s)"), SI("Mirabilite"), SI("Halite"), SI("Hydrohalite"), SI("Calcite"), SI("Gypsum")
+	    80 PUNCH EQUI("Ice(s)"), EQUI("Mirabilite"), EQUI("Halite"), EQUI("Hydrohalite"), EQUI("Calcite"), EQUI("Gypsum")
+	    90 PUNCH ITERATIONS
+	END
+-----
+TITLE
+-----
+
+ C3_Baseline FREZCHEM sequential FC at 23.00 C
+
+-------------------------------------------
+Beginning of initial solution calculations.
+-------------------------------------------
+
+Initial solution 1.	
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	C(4)              3.940e-03   3.940e-03
+	Ca                2.409e-02   2.409e-02
+	Cl                1.146e+00   1.146e+00
+	K                 2.162e-02   2.162e-02
+	Mg                1.163e-01   1.163e-01
+	Na                9.390e-01   9.390e-01
+	S(6)              5.966e-02   5.966e-02
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   6.972    
+                                       pe  =   4.000    
+      Specific Conductance (µS/cm,  23°C)  = 83413
+                          Density (g/cm³)  =   1.04873
+                               Volume (L)  =   1.02297
+                        Activity of water  =   0.962
+                 Ionic strength (mol/kgw)  =   1.455e+00
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.616e-03
+                       Total CO2 (mol/kg)  =   3.940e-03
+                         Temperature (°C)  =  23.00
+                  Electrical balance (eq)  =  -2.733e-02
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -1.09
+                               Iterations  =  12
+                         Gamma iterations  =   4
+                      Osmotic coefficient  =   0.93463
+                         Density of water  =   0.99754
+                                  Total H  = 1.110222e+02
+                                  Total O  = 5.575940e+01
+
+----------------------------Distribution of species----------------------------
+
+                                                    Unscaled  Unscaled
+                                Unscaled       Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             2.177e-07   7.844e-08    -6.662    -7.105    -0.443     -1.51
+   H+              1.336e-07   1.066e-07    -6.874    -6.972    -0.098      0.00
+   H2O             5.551e+01   9.618e-01     1.744    -0.017     0.000     18.06
+C(4)          3.940e-03
+   HCO3-           3.556e-03   1.793e-03    -2.449    -2.747    -0.298     28.16
+   CO2             3.539e-04   4.583e-04    -3.451    -3.339     0.112     29.58
+   MgCO3           1.633e-05   1.633e-05    -4.787    -4.787     0.000    -17.09
+   CO3-2           1.354e-05   7.567e-07    -4.868    -6.121    -1.253      1.31
+   CaCO3           2.339e-12   2.339e-12   -11.631   -11.631     0.000     (0)  
+Ca            2.409e-02
+   Ca+2            2.409e-02   4.214e-03    -1.618    -2.375    -0.757    -16.27
+   CaCO3           2.339e-12   2.339e-12   -11.631   -11.631     0.000     (0)  
+Cl            1.146e+00
+   Cl-             1.146e+00   8.021e-01     0.059    -0.096    -0.155     19.05
+K             2.162e-02
+   K+              2.162e-02   1.169e-02    -1.665    -1.932    -0.267     10.02
+Mg            1.163e-01
+   Mg+2            1.163e-01   2.621e-02    -0.934    -1.582    -0.647    -19.86
+   MgCO3           1.633e-05   1.633e-05    -4.787    -4.787     0.000    -17.09
+   MgOH+           3.710e-07   3.079e-07    -6.431    -6.512    -0.081     (0)  
+Na            9.390e-01
+   Na+             9.390e-01   5.741e-01    -0.027    -0.241    -0.214     -0.16
+S(6)          5.966e-02
+   SO4-2           5.966e-02   4.200e-03    -1.224    -2.377    -1.152     20.07
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(296 K,   1 atm)
+
+  Anhydrite        -0.51     -4.75   -4.24  CaSO4
+  Antarcticite     -6.41     -2.67    3.74  CaCl2:6H2O
+  Aphthitalite    -14.26    -21.58   -7.32  Na2SO4:3K2SO4
+  Aragonite        -0.17     -8.50   -8.32  CaCO3
+  Arcanite         -4.43     -6.24   -1.81  K2SO4
+  Bischofite       -6.52     -1.87    4.64  MgCl2:6H2O
+  Bloedite         -4.51     -6.88   -2.38  Na2Mg(SO4)2:4H2O
+  Calcite          -0.03     -8.50   -8.47  CaCO3
+  Carnallite       -8.17     -3.90    4.27  KMgCl3:6H2O
+  CO2(g)           -1.89     -3.34   -1.44  CO2
+  Dolomite          0.84    -16.20  -17.04  CaMg(CO3)2
+  Epsomite         -2.17     -4.08   -1.91  MgSO4:7H2O
+  Gypsum           -0.19     -4.79   -4.60  CaSO4:2H2O
+  Halite           -1.91     -0.34    1.57  NaCl
+  Hexahydrite      -2.43     -4.06   -1.63  MgSO4:6H2O
+  Hydrohalite      -1.88     -0.37    1.51  NaCl:2H2O
+  Hydromagnesite   -2.31    -38.95  -36.64  (MgCO3)3:Mg(OH)2:3H2O
+  Ice(s)           -0.11     -0.02    0.09  H2O
+  Ikaite           -1.97     -8.60   -6.63  CaCO3:6H2O
+  Kalicinite       -4.84     -4.68    0.16  KHCO3
+  Kieserite        -3.80     -3.98   -0.17  MgSO4:H2O
+  Landsfordite     -2.70     -7.79   -5.09  MgCO3:5H2O
+  Magnesite         0.30     -7.70   -8.00  MgCO3
+  Meridianite      -2.75     -4.14   -1.39  MgSO4:11H2O
+  MgCl2:12H2O      -6.48     -1.98    4.51  MgCl2:12H2O
+  MgCl2:8H2O       -6.05     -1.91    4.15  MgCl2:8H2O
+  Mirabilite       -1.71     -3.03   -1.32  Na2SO4:10H2O
+  Na2CO3:7H2O      -6.23     -6.72   -0.49  Na2CO3:7H2O
+  Nahcolite        -2.57     -2.99   -0.42  NaHCO3
+  Natron           -5.88     -6.77   -0.89  Na2CO3:10H2O
+  Nesquehonite     -2.45     -7.75   -5.31  MgCO3:3H2O
+  Picromerite      -5.88    -10.30   -4.42  MgSO4:K2SO4:6H2O
+  Sylvite          -2.90     -2.03    0.88  KCl
+  Tachyhydrite    -23.37     -6.32   17.05  CaCl2:(MgCl2)2:12H2O
+  Thenardite       -2.57     -2.86   -0.29  Na2SO4
+  Trona            -8.58     -9.62   -1.04  Na3H(CO3)2:2H2O
+  Vaterite         -0.60     -8.50   -7.90  CaCO3
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+-----------------------------------------
+Beginning of batch-reaction calculations.
+-----------------------------------------
+
+Reaction step 1.
+
+Using solution 1.	
+Using pure phase assemblage 1.	
+
+-------------------------------Phase assemblage--------------------------------
+
+                                                      Moles in assemblage
+Phase               SI  log IAP  log K(T, P)   Initial       Final       Delta
+
+Calcite          -0.03    -8.50     -8.47    0.000e+00           0   0.000e+00
+Gypsum           -0.19    -4.79     -4.60    0.000e+00           0   0.000e+00
+Halite           -1.91    -0.34      1.57    0.000e+00           0   0.000e+00
+Hydrohalite      -1.88    -0.37      1.51    0.000e+00           0   0.000e+00
+Ice(s)           -0.11    -0.02      0.09    0.000e+00           0   0.000e+00
+Mirabilite       -1.71    -3.03     -1.32    0.000e+00           0   0.000e+00
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	C                 3.940e-03   3.940e-03
+	Ca                2.409e-02   2.409e-02
+	Cl                1.146e+00   1.146e+00
+	K                 2.162e-02   2.162e-02
+	Mg                1.163e-01   1.163e-01
+	Na                9.390e-01   9.390e-01
+	S                 5.966e-02   5.966e-02
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   6.972      Charge balance
+                                       pe  =   4.000      Adjusted to redox equilibrium
+      Specific Conductance (µS/cm,  23°C)  = 83413
+                          Density (g/cm³)  =   1.04873
+                               Volume (L)  =   1.02297
+                        Activity of water  =   0.962
+                 Ionic strength (mol/kgw)  =   1.455e+00
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   3.616e-03
+                       Total CO2 (mol/kg)  =   3.940e-03
+                         Temperature (°C)  =  23.00
+                  Electrical balance (eq)  =  -2.733e-02
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -1.09
+                               Iterations  =   1
+                         Gamma iterations  =   1
+                      Osmotic coefficient  =   0.93463
+                         Density of water  =   0.99754
+                                  Total H  = 1.110222e+02
+                                  Total O  = 5.575940e+01
+
+----------------------------Distribution of species----------------------------
+
+                                                    Unscaled  Unscaled
+                                Unscaled       Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             2.177e-07   7.844e-08    -6.662    -7.105    -0.443     -1.51
+   H+              1.336e-07   1.066e-07    -6.874    -6.972    -0.098      0.00
+   H2O             5.551e+01   9.618e-01     1.744    -0.017     0.000     18.06
+C(4)          3.940e-03
+   HCO3-           3.556e-03   1.793e-03    -2.449    -2.747    -0.298     28.16
+   CO2             3.539e-04   4.583e-04    -3.451    -3.339     0.112     29.58
+   MgCO3           1.633e-05   1.633e-05    -4.787    -4.787     0.000    -17.09
+   CO3-2           1.354e-05   7.567e-07    -4.868    -6.121    -1.253      1.31
+   CaCO3           2.339e-12   2.339e-12   -11.631   -11.631     0.000     (0)  
+Ca            2.409e-02
+   Ca+2            2.409e-02   4.214e-03    -1.618    -2.375    -0.757    -16.27
+   CaCO3           2.339e-12   2.339e-12   -11.631   -11.631     0.000     (0)  
+Cl            1.146e+00
+   Cl-             1.146e+00   8.021e-01     0.059    -0.096    -0.155     19.05
+K             2.162e-02
+   K+              2.162e-02   1.169e-02    -1.665    -1.932    -0.267     10.02
+Mg            1.163e-01
+   Mg+2            1.163e-01   2.621e-02    -0.934    -1.582    -0.647    -19.86
+   MgCO3           1.633e-05   1.633e-05    -4.787    -4.787     0.000    -17.09
+   MgOH+           3.710e-07   3.079e-07    -6.431    -6.512    -0.081     (0)  
+Na            9.390e-01
+   Na+             9.390e-01   5.741e-01    -0.027    -0.241    -0.214     -0.16
+S(6)          5.966e-02
+   SO4-2           5.966e-02   4.200e-03    -1.224    -2.377    -1.152     20.07
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(296 K,   1 atm)
+
+  Anhydrite        -0.51     -4.75   -4.24  CaSO4
+  Antarcticite     -6.41     -2.67    3.74  CaCl2:6H2O
+  Aphthitalite    -14.26    -21.58   -7.32  Na2SO4:3K2SO4
+  Aragonite        -0.17     -8.50   -8.32  CaCO3
+  Arcanite         -4.43     -6.24   -1.81  K2SO4
+  Bischofite       -6.52     -1.87    4.64  MgCl2:6H2O
+  Bloedite         -4.51     -6.88   -2.38  Na2Mg(SO4)2:4H2O
+  Calcite          -0.03     -8.50   -8.47  CaCO3
+  Carnallite       -8.17     -3.90    4.27  KMgCl3:6H2O
+  CO2(g)           -1.89     -3.34   -1.44  CO2
+  Dolomite          0.84    -16.20  -17.04  CaMg(CO3)2
+  Epsomite         -2.17     -4.08   -1.91  MgSO4:7H2O
+  Gypsum           -0.19     -4.79   -4.60  CaSO4:2H2O
+  Halite           -1.91     -0.34    1.57  NaCl
+  Hexahydrite      -2.43     -4.06   -1.63  MgSO4:6H2O
+  Hydrohalite      -1.88     -0.37    1.51  NaCl:2H2O
+  Hydromagnesite   -2.31    -38.95  -36.64  (MgCO3)3:Mg(OH)2:3H2O
+  Ice(s)           -0.11     -0.02    0.09  H2O
+  Ikaite           -1.97     -8.60   -6.63  CaCO3:6H2O
+  Kalicinite       -4.84     -4.68    0.16  KHCO3
+  Kieserite        -3.80     -3.98   -0.17  MgSO4:H2O
+  Landsfordite     -2.70     -7.79   -5.09  MgCO3:5H2O
+  Magnesite         0.30     -7.70   -8.00  MgCO3
+  Meridianite      -2.75     -4.14   -1.39  MgSO4:11H2O
+  MgCl2:12H2O      -6.48     -1.98    4.51  MgCl2:12H2O
+  MgCl2:8H2O       -6.05     -1.91    4.15  MgCl2:8H2O
+  Mirabilite       -1.71     -3.03   -1.32  Na2SO4:10H2O
+  Na2CO3:7H2O      -6.23     -6.72   -0.49  Na2CO3:7H2O
+  Nahcolite        -2.57     -2.99   -0.42  NaHCO3
+  Natron           -5.88     -6.77   -0.89  Na2CO3:10H2O
+  Nesquehonite     -2.45     -7.75   -5.31  MgCO3:3H2O
+  Picromerite      -5.88    -10.30   -4.42  MgSO4:K2SO4:6H2O
+  Sylvite          -2.90     -2.03    0.88  KCl
+  Tachyhydrite    -23.37     -6.32   17.05  CaCl2:(MgCl2)2:12H2O
+  Thenardite       -2.57     -2.86   -0.29  Na2SO4
+  Trona            -8.58     -9.62   -1.04  Na3H(CO3)2:2H2O
+  Vaterite         -0.60     -8.50   -7.90  CaCO3
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+------------------
+End of simulation.
+------------------
+
+------------------------------------
+Reading input data for simulation 2.
+------------------------------------
+
+-------------------------------
+End of Run after 1.248 Seconds.
+-------------------------------
+
